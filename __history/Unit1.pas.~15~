@@ -1,0 +1,103 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Data.DB, Vcl.Grids,
+  Vcl.DBGrids, Vcl.Mask, Vcl.ExtCtrls, Vcl.DBCtrls, Vcl.Buttons;
+
+type
+  TfrmCadReceitas = class(TForm)
+    lblCadastroReceita: TLabel;
+    lblNome: TLabel;
+    lblProduto: TLabel;
+    lblDuracao: TLabel;
+    lblInsumos: TLabel;
+    btnNovo: TButton;
+    btnSalvar: TButton;
+    btnEditar: TButton;
+    btnExcluir: TButton;
+    Button1: TButton;
+    btnCancelar: TButton;
+    DBGrid1: TDBGrid;
+    dbenome: TDBEdit;
+    dbeProduto: TDBEdit;
+    dbeDuracao: TDBEdit;
+    dbeInsumos: TDBEdit;
+    dbmInsumos: TDBMemo;
+    DBNavigator1: TDBNavigator;
+    btnRecarregar: TButton;
+    procedure btnCancelarClick(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure btnRecarregarClick(Sender: TObject);
+    procedure btnNovoClick(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadReceitas: TfrmCadReceitas;
+
+implementation
+
+{$R *.dfm}
+
+uses UnitDM;
+
+procedure TfrmCadReceitas.btnCancelarClick(Sender: TObject);
+begin
+  if(DM.dsReceitas.DataSet.State in [dsInsert, dsEdit]) then
+  begin
+    DM.dsReceitas.DataSet.Cancel;
+  end;
+  Self.Close;
+  Self.ModalResult := mrCancel;
+end;
+
+procedure TfrmCadReceitas.btnNovoClick(Sender: TObject);
+begin
+  btnNovo.Enabled := false;
+  btnExcluir.Enabled := false;
+  btnSalvar.Enabled := true;
+  btnCancelar.Enabled := true;
+end;
+
+procedure TfrmCadReceitas.btnRecarregarClick(Sender: TObject);
+begin
+  DM.tbReceitas.Close;
+  DM.tbReceitas.Open;
+end;
+
+procedure TfrmCadReceitas.btnSalvarClick(Sender: TObject);
+begin
+  Self.Close;
+  Self.ModalResult := mrOk;
+
+end;
+
+
+procedure TfrmCadReceitas.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+begin
+  case (Key) of
+    VK_f3:
+    btnSalvar.Click;
+    VK_F4:
+    begin
+      if (ssAlt in Shift) then
+      begin
+        Key := 0;
+      end;
+    end;
+
+  end;
+end;
+
+
+end.
+
+

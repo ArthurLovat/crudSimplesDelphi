@@ -1,0 +1,83 @@
+object DM: TDM
+  Height = 600
+  Width = 800
+  object conexao: TFDConnection
+    Params.Strings = (
+      'Database=delphi'
+      'User_Name=postgres'
+      'Password=postgres'
+      'DriverID=PG')
+    Connected = True
+    Left = 128
+    Top = 208
+  end
+  object dsReceitas: TDataSource
+    DataSet = tbReceitas
+    Left = 208
+    Top = 280
+  end
+  object tbReceitas: TFDTable
+    Active = True
+    IndexFieldNames = 'id'
+    Connection = conexao
+    ResourceOptions.AssignedValues = [rvEscapeExpand]
+    TableName = 'receitas'
+    Left = 208
+    Top = 208
+    object tbReceitasid: TIntegerField
+      FieldName = 'id'
+      Origin = 'id'
+    end
+    object tbReceitasnome: TWideStringField
+      FieldName = 'nome'
+      Origin = 'nome'
+      Size = 50
+    end
+    object tbReceitasproduto: TWideStringField
+      FieldName = 'produto'
+      Origin = 'produto'
+      Size = 50
+    end
+    object tbReceitasduracao: TWideStringField
+      FieldName = 'duracao'
+      Origin = 'duracao'
+      EditMask = '##:##:##;1;_'
+      Size = 10
+    end
+    object tbReceitasinsumos: TWideStringField
+      FieldName = 'insumos'
+      Origin = 'insumos'
+      Size = 256
+    end
+  end
+  object sqlCadReceita: TFDCommand
+    Connection = conexao
+    ParamData = <
+      item
+        Name = 'pId'
+      end
+      item
+        Name = 'pNome'
+      end>
+    Left = 296
+    Top = 208
+  end
+  object sqlBuscaReceitas: TFDQuery
+    Active = True
+    Connection = conexao
+    SQL.Strings = (
+      'select * from receitas;')
+    Left = 384
+    Top = 208
+  end
+  object dsBuscaReceitas: TDataSource
+    DataSet = sqlBuscaReceitas
+    Left = 384
+    Top = 272
+  end
+  object FDPhysPgDriverLink1: TFDPhysPgDriverLink
+    VendorLib = 'C:\areaDeEstudos\delphi\Receitas\Win32\Debug\libpq.dll'
+    Left = 480
+    Top = 208
+  end
+end

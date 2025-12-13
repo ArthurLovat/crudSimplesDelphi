@@ -1,0 +1,31 @@
+object DM: TDM
+  Height = 600
+  Width = 800
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=delphi'
+      'User_Name=postgres'
+      'Password=postgres'
+      'LoginTimeout=3'
+      'DriverID=PG')
+    Left = 128
+    Top = 208
+  end
+  object qCadReceitas: TFDQuery
+    Connection = FDConnection1
+    Left = 248
+    Top = 208
+  end
+  object dsReceitas: TDataSource
+    OnDataChange = dsReceitasDataChange
+    Left = 344
+    Top = 208
+  end
+  object qBuscaReceitas: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select * from receitas;')
+    Left = 248
+    Top = 304
+  end
+end

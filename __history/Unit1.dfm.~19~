@@ -1,0 +1,209 @@
+object frmCadReceitas: TfrmCadReceitas
+  Left = 0
+  Top = 0
+  Caption = 'Cadastro de Receitas'
+  ClientHeight = 672
+  ClientWidth = 1155
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OnKeyDown = FormKeyDown
+  TextHeight = 15
+  object lblCadastroReceita: TLabel
+    Left = 96
+    Top = 72
+    Width = 267
+    Height = 37
+    Caption = 'Cadastro de Receitas'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblNome: TLabel
+    Left = 96
+    Top = 160
+    Width = 33
+    Height = 15
+    Caption = 'Nome'
+  end
+  object lblProduto: TLabel
+    Left = 96
+    Top = 216
+    Width = 43
+    Height = 15
+    Caption = 'Produto'
+  end
+  object lblDuracao: TLabel
+    Left = 96
+    Top = 272
+    Width = 44
+    Height = 15
+    Caption = 'Dura'#231#227'o'
+  end
+  object lblInsumos: TLabel
+    Left = 96
+    Top = 320
+    Width = 45
+    Height = 15
+    Caption = 'Insumos'
+  end
+  object btnNovo: TButton
+    Left = 488
+    Top = 57
+    Width = 105
+    Height = 83
+    Caption = 'Novo'
+    TabOrder = 0
+  end
+  object btnSalvar: TButton
+    Left = 599
+    Top = 57
+    Width = 105
+    Height = 83
+    Caption = 'Salvar'
+    TabOrder = 1
+    OnClick = btnSalvarClick
+  end
+  object btnEditar: TButton
+    Left = 710
+    Top = 57
+    Width = 105
+    Height = 83
+    Caption = 'Editar'
+    TabOrder = 2
+  end
+  object btnExcluir: TButton
+    Left = 821
+    Top = 57
+    Width = 105
+    Height = 83
+    Caption = 'Excluir'
+    TabOrder = 3
+  end
+  object Button1: TButton
+    Left = 295
+    Top = 341
+    Width = 105
+    Height = 23
+    Caption = 'Adicionar'
+    TabOrder = 4
+  end
+  object btnCancelar: TButton
+    Left = 932
+    Top = 57
+    Width = 105
+    Height = 83
+    Caption = 'Cancelar'
+    TabOrder = 5
+    OnClick = btnCancelarClick
+  end
+  object DBGrid1: TDBGrid
+    Left = 488
+    Top = 216
+    Width = 549
+    Height = 393
+    DataSource = DM.dsReceitas
+    TabOrder = 6
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -12
+    TitleFont.Name = 'Segoe UI'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'id'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'nome'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'produto'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'duracao'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'insumos'
+        Visible = True
+      end>
+  end
+  object dbenome: TDBEdit
+    Left = 96
+    Top = 181
+    Width = 193
+    Height = 23
+    DataField = 'nome'
+    DataSource = DM.dsReceitas
+    TabOrder = 7
+  end
+  object dbeProduto: TDBEdit
+    Left = 96
+    Top = 237
+    Width = 193
+    Height = 23
+    DataField = 'produto'
+    DataSource = DM.dsReceitas
+    TabOrder = 8
+  end
+  object dbeDuracao: TDBEdit
+    Left = 96
+    Top = 291
+    Width = 193
+    Height = 23
+    DataField = 'duracao'
+    DataSource = DM.dsReceitas
+    MaxLength = 8
+    TabOrder = 9
+  end
+  object dbeInsumos: TDBEdit
+    Left = 96
+    Top = 341
+    Width = 193
+    Height = 23
+    DataField = 'insumos'
+    DataSource = DM.dsReceitas
+    TabOrder = 10
+  end
+  object dbmInsumos: TDBMemo
+    Left = 96
+    Top = 370
+    Width = 304
+    Height = 239
+    DataField = 'insumos'
+    DataSource = DM.dsReceitas
+    TabOrder = 11
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 295
+    Top = 166
+    Width = 544
+    Height = 44
+    DataSource = DM.dsReceitas
+    VisibleButtons = [nbPrior, nbNext, nbInsert, nbDelete, nbEdit, nbCancel, nbApplyUpdates, nbCancelUpdates]
+    TabOrder = 12
+  end
+  object btnRecarregar: TButton
+    Left = 932
+    Top = 185
+    Width = 105
+    Height = 25
+    Caption = 'Recarregar'
+    TabOrder = 13
+    OnClick = btnRecarregarClick
+  end
+end

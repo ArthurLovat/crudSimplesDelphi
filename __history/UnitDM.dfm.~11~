@@ -1,0 +1,52 @@
+object DM: TDM
+  Height = 600
+  Width = 800
+  object conexao: TFDConnection
+    Params.Strings = (
+      'Database=delphi'
+      'User_Name=postgres'
+      'Password=postgres'
+      'DriverID=PG')
+    Left = 128
+    Top = 208
+  end
+  object dsReceitas: TDataSource
+    DataSet = tReceitas
+    Left = 208
+    Top = 280
+  end
+  object tReceitas: TFDTable
+    Connection = conexao
+    Left = 208
+    Top = 208
+  end
+  object sqlCadReceita: TFDCommand
+    Connection = conexao
+    ParamData = <
+      item
+        Name = 'pId'
+      end
+      item
+        Name = 'pNome'
+      end>
+    Left = 296
+    Top = 208
+  end
+  object sqlBuscaReceitas: TFDQuery
+    Connection = conexao
+    SQL.Strings = (
+      'select * from receitas;')
+    Left = 384
+    Top = 208
+  end
+  object dsBuscaReceitas: TDataSource
+    DataSet = sqlBuscaReceitas
+    Left = 384
+    Top = 272
+  end
+  object FDPhysPgDriverLink1: TFDPhysPgDriverLink
+    VendorLib = 'C:\areaDeEstudos\delphi\Receitas\Win64\Debug\libpq.dll'
+    Left = 520
+    Top = 360
+  end
+end
