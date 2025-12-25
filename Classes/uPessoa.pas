@@ -1,0 +1,36 @@
+unit uPessoa;
+
+interface
+uses System.SysUtils,
+     uPessoaIntf;
+type
+    TPessoa = class(TInterfacedObject, IPessoa)
+      private
+        FNome: string;
+        FIdade: Integer;
+
+      public
+        constructor Create(ANome: string; AIdade: Integer);
+
+        property Nome: string read Fnome write Fnome;
+        property Idade: Integer read FIdade write Fidade;
+
+        function Apresentar: string;
+
+        destructor Destroy; override;
+    end;
+
+implementation
+
+constructor TPessoa.Create(ANome: string; AIdade: Integer);
+begin
+  Nome := ANome;
+  Idade := AIdade;
+end;
+
+function TPessoa.Apresentar: string;
+begin
+  Result := 'Meu nome é ' + Nome + ' e tenho ' + Idade.ToString + ' anos';
+end;
+
+end.

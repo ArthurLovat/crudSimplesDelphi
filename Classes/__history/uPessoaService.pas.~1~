@@ -1,0 +1,19 @@
+unit uPessoaService;
+
+interface
+uses uPessoaIntf;
+
+type
+  TPessoaService = class
+    private
+      FPessoa: IPessoa;
+
+    public
+      constructor Create(APessoa: IPessoa);
+      function Execultar: string;
+  end;
+
+
+implementation
+
+end.

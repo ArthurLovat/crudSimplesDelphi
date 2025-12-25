@@ -132,6 +132,13 @@
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
+        <DCCReference Include="Classes\uPessoa.pas"/>
+        <DCCReference Include="Classes\ufuncionario.pas"/>
+        <DCCReference Include="Classes\uCarrinho.pas"/>
+        <DCCReference Include="Classes\uPessoaIntf.pas"/>
+        <DCCReference Include="Classes\uPessoaService.pas"/>
+        <DCCReference Include="ClassesReceitas\uIngrediente.pas"/>
+        <DCCReference Include="ClassesReceitas\uReceita.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

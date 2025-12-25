@@ -6,9 +6,48 @@
     <Transaction>2025/12/10 14:12:53.000.055,C:\areaDeEstudos\delphi\Receitas\Unit1.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
     <Transaction>2025/12/10 14:24:32.000.401,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
     <Transaction>2025/12/10 14:25:31.000.471,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2025/12/10 14:25:57.000.594,C:\areaDeEstudos\delphi\Receitas\UnitDM.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
     <Transaction>2025/12/10 14:25:57.000.594,C:\areaDeEstudos\delphi\Receitas\UnitDM.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2025/12/10 14:25:57.000.594,C:\areaDeEstudos\delphi\Receitas\UnitDM.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
     <Transaction>2025/12/10 14:50:49.000.512,C:\areaDeEstudos\delphi\Receitas\ProjetoReceitas.dproj=C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2025/12/24 13:05:05.000.470,=C:\areaDeEstudos\delphi\Receitas\Unit2.pas</Transaction>
+    <Transaction>2025/12/24 13:05:25.000.305,C:\areaDeEstudos\delphi\Receitas\Unit2.pas=C:\areaDeEstudos\delphi\Receitas\ClassOne.pas</Transaction>
+    <Transaction>2025/12/24 13:27:42.000.695,C:\areaDeEstudos\delphi\Receitas\ClassOne.pas=C:\areaDeEstudos\delphi\Receitas\TPessoa.pas</Transaction>
+    <Transaction>2025/12/24 13:39:39.000.915,C:\areaDeEstudos\delphi\Receitas\TPessoa.pas=C:\areaDeEstudos\delphi\Receitas\uPessoa.pas</Transaction>
+    <Transaction>2025/12/24 13:55:58.000.741,C:\areaDeEstudos\delphi\Receitas\uPessoa.pas=C:\areaDeEstudos\delphi\Receitas\Classes\uPessoa.pas</Transaction>
+    <Transaction>2025/12/24 14:21:07.000.382,=C:\areaDeEstudos\delphi\Receitas\Unit2.pas</Transaction>
+    <Transaction>2025/12/24 14:21:16.000.872,C:\areaDeEstudos\delphi\Receitas\Unit2.pas=C:\areaDeEstudos\delphi\Receitas\ufuncionario.pas</Transaction>
+    <Transaction>2025/12/24 14:21:27.000.162,C:\areaDeEstudos\delphi\Receitas\ufuncionario.pas=C:\areaDeEstudos\delphi\Receitas\Classes\ufuncionario.pas</Transaction>
+    <Transaction>2025/12/24 15:23:54.982,=C:\areaDeEstudos\delphi\Receitas\Unit2.pas</Transaction>
+    <Transaction>2025/12/24 15:25:19.504,C:\areaDeEstudos\delphi\Receitas\uCarrinho.pas=C:\areaDeEstudos\delphi\Receitas\Unit2.pas</Transaction>
+    <Transaction>2025/12/24 15:25:29.419,C:\areaDeEstudos\delphi\Receitas\Classes\uCarrinho.pas=C:\areaDeEstudos\delphi\Receitas\uCarrinho.pas</Transaction>
+    <Transaction>2025/12/24 16:13:38.674,=C:\areaDeEstudos\delphi\Receitas\Unit2.pas</Transaction>
+    <Transaction>2025/12/24 16:13:54.388,C:\areaDeEstudos\delphi\Receitas\IPessoa.pas=C:\areaDeEstudos\delphi\Receitas\Unit2.pas</Transaction>
+    <Transaction>2025/12/24 16:14:04.164,C:\areaDeEstudos\delphi\Receitas\Classes\IPessoa.pas=C:\areaDeEstudos\delphi\Receitas\IPessoa.pas</Transaction>
+    <Transaction>2025/12/24 16:18:11.863,C:\areaDeEstudos\delphi\Receitas\Classes\uPessoaIntf.pas=C:\areaDeEstudos\delphi\Receitas\Classes\IPessoa.pas</Transaction>
+    <Transaction>2025/12/24 16:31:18.995,=C:\areaDeEstudos\delphi\Receitas\Unit2.pas</Transaction>
+    <Transaction>2025/12/24 16:31:32.905,C:\areaDeEstudos\delphi\Receitas\uPessoaService.pas=C:\areaDeEstudos\delphi\Receitas\Unit2.pas</Transaction>
+    <Transaction>2025/12/24 16:34:45.375,C:\areaDeEstudos\delphi\Receitas\Classes\uPessoaService.pas=C:\areaDeEstudos\delphi\Receitas\uPessoaService.pas</Transaction>
+    <Transaction>2025/12/24 16:43:09.450,=C:\areaDeEstudos\delphi\Receitas\Unit2.pas</Transaction>
+    <Transaction>2025/12/24 16:43:34.673,C:\areaDeEstudos\delphi\Receitas\uIngredientes.pas=C:\areaDeEstudos\delphi\Receitas\Unit2.pas</Transaction>
+    <Transaction>2025/12/24 16:43:39.582,C:\areaDeEstudos\delphi\Receitas\ClassesReceitas\uIngredientes.pas=C:\areaDeEstudos\delphi\Receitas\uIngredientes.pas</Transaction>
+    <Transaction>2025/12/24 16:51:18.250,C:\areaDeEstudos\delphi\Receitas\ClassesReceitas\uIngrediente.pas=C:\areaDeEstudos\delphi\Receitas\ClassesReceitas\uIngredientes.pas</Transaction>
+    <Transaction>2025/12/24 16:57:03.602,=C:\areaDeEstudos\delphi\Receitas\Unit2.pas</Transaction>
+    <Transaction>2025/12/24 16:57:26.881,C:\areaDeEstudos\delphi\Receitas\ClassesReceitas\uReceita.pas=C:\areaDeEstudos\delphi\Receitas\Unit2.pas</Transaction>
   </Transactions>
 	<BT_BuildType>Debug</BT_BuildType>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Classes"/>
+    <File Path="Classes\uCarrinho.pas"/>
+    <File Path="Classes\ufuncionario.pas"/>
+    <File Path="Classes\uPessoa.pas"/>
+    <File Path="Classes\uPessoaIntf.pas"/>
+    <File Path="Classes\uPessoaService.pas"/>
+    <File Path="ClassesReceitas"/>
+    <File Path="ClassesReceitas\uIngrediente.pas"/>
+    <File Path="ClassesReceitas\uReceita.pas"/>
+    <File Path="Unit1.pas"/>
+    <File Path="Unit1.dfm"/>
+    <File Path="UnitDM.pas"/>
+    <File Path="UnitDM.dfm"/>
+  </ProjectSortOrder>
 </BorlandProject>

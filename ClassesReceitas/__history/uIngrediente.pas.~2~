@@ -1,0 +1,27 @@
+unit uIngrediente;
+
+interface
+type
+  TIgredientes = class
+    private
+      FNome: string;
+      FQuantidade: Integer;
+
+    public
+      constructor Create(ANome: string; AQuantidade: Integer);
+
+      property Nome: string read FNome write FNome;
+      property Quantidade: Integer read FQuantidade write FQuantidade;
+
+      function Descricao: string;
+  end;
+
+implementation
+
+constructor TIngredientes.Create(ANome: string; AQuantidade: Integer);
+begin
+  Nome := ANome;
+  Quantidade := AQuantidade;
+end;
+
+end.

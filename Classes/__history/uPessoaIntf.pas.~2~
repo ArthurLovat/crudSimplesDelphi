@@ -1,0 +1,9 @@
+unit uPessoaIntf;
+
+interface
+
+  IPessoa = inteface
+
+  function Apresentar
+implementation
+end.
